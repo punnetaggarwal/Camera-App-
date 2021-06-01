@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.video-container{
+    height: 100vh;
+    background-color: #444;
+}
+video{
+    height: 100vh;
+    width: 100vw;
+}
+
+#video-record, #pause-video{
+    position: fixed;
+    right: 6rem;
+    top: 36vh;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+}
+#video-record:hover, #click-picture:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+#click-picture, #stop-video{
+    position: fixed;
+    right: 6rem;
+    top: 60vh;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+}
+.selected-icon{
+    background-color: black;
+    /* color: black; */
+}
+.selected-icon:hover{
+    border: 3px solid black;
+}
+#click-picture:hover, #video-record:hover, #stop-video:hover, #pause-video:hover{
+    cursor: pointer;
+}
+#stop-video{
+    border: 5px solid red;
+    color: red;
+}
+#pause-video{
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+}
+#keyboard-arrow-up, #keyboard-arrow-down{
+    position: fixed;
+    right: 6rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    cursor: default;
+}
+#keyboard-arrow-up:hover, #keyboard-arrow-down:hover{
+    background-color: black;
+}
+#keyboard-arrow-up{
+    top: 20vh;
+}
+#keyboard-arrow-down{
+    top: 80vh;
+}
+#photo-timer{
+    position: fixed;
+    top: 63vh;
+    right: 12rem;
+    color: white;
+}
+#timer-choices{
+    position: fixed;
+    top: 64vh;
+    right: 11rem;
+    color: white;
+    font-size: 15px;
+}
+#timer-choices:hover{
+    cursor: default;
+}
+.filter-container{
+    position: fixed;
+    top: 20vh;
+    left: 4rem;
+    height: 60vh;
+    width: 12vh;
+    border: 1px solid black;
+}
+.filter{
+    height: 20%;
+    border-bottom: 1px solid black;
+}
+.filter:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.filter-screen-parent{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+#timer{
+    height: 2rem;
+    width: 5rem;
+    position: fixed;
+    top: 37rem;
+    left: 40rem;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
